@@ -14,5 +14,5 @@ html, body , #root {
   display: flex;
   flex-direction: row;
   width: auto;
+  border: 5px solid blue;
 }
-

@@ -1,9 +1,11 @@
-import React from "react";
+/* eslint-disable max-len */
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Controls() {
+export default function Controls({ onChange, onSubmit }) {
   return (
-    <form>
-      <input type="text" name="url" placeholder="URL" />
+    <form onChange={onChange} onSubmit={onSubmit}>
+      <input type="text" aria-label="url" name="url" placeholder="URL" />
       <section>
         <div>
           <label htmlFor="get">GET
@@ -24,7 +26,12 @@ export default function Controls() {
         </div>
         <button>Submit</button>
       </section>
-      <textarea name="body" placeholder="raw JSON body"></textarea>
+      <textarea name="body" aria-label="body" placeholder="raw JSON body" ></textarea>
     </form>
   );
 }
+
+Controls.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired
+};
