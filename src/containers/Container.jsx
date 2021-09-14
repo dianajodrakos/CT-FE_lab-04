@@ -3,7 +3,7 @@ import Controls from '../components/api-client/Controls';
 import Display from '../components/api-client/Display';
 import Header from '../components/Header';
 import History from '../components/history/History';
-import { callAPI } from '../services/apiServices';
+import { callAPI } from '../services/apiService';
 import styles from '../index.css';
 
 export default class Container extends Component {
@@ -34,28 +34,24 @@ handleSubmit = async (event) => {
 
 }
 
-// handleClick = (event) => {
-  
-// }
-
 render() {
   console.log(this.state);
 
   const { loading, display } = this.state;
   return (
-    <>
+    <div className={styles.rooot}>
       <Header />
       <section className={styles.main}>
         <History />
         <div>
           <Controls onChange={this.handleChange} onSubmit={this.handleSubmit}/>
           { loading 
-            ? <div>Loading...</div>
-            :<Display display={display}/> 
+            ? <div className={styles.display}>Loading...</div>
+            : <Display display={display}/> 
           }
         </div>
       </section>
-    </>
+    </div>
   );
 }
 }

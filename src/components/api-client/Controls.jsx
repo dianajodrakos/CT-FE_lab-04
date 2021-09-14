@@ -1,27 +1,33 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../../index.css';
 
 export default function Controls({ onChange, onSubmit }) {
   return (
-    <form onChange={onChange} onSubmit={onSubmit}>
+    <form className={styles.display} onChange={onChange} onSubmit={onSubmit}>
       <input type="text" aria-label="url" name="url" placeholder="URL" />
       <section>
         <div>
-          <label htmlFor="get">GET
+          <label htmlFor="get">
             <input type="radio" id="get" name="method" value="GET" />
+            <p>GET</p>
           </label>
-          <label htmlFor="post">POST
+          <label htmlFor="post">
             <input type="radio" id="post" name="method" value="POST" />
+            <p>POST</p>
           </label>
-          <label htmlFor="put">PUT
+          <label htmlFor="put">
             <input type="radio" id="put" name="method" value="PUT" />
+            <p>PUT</p>
           </label>
-          <label htmlFor="patch">PATCH
+          <label htmlFor="patch">
             <input type="radio" id="patch" name="method" value="PATCH" />
+            <p>PATCH</p>
           </label>
-          <label htmlFor="delete">DELETE
+          <label htmlFor="delete">
             <input type="radio" id="delete" name="method" value="DELETE" />
+            <p>DELETE</p>
           </label>
         </div>
         <button>Submit</button>
