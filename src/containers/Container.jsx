@@ -3,10 +3,12 @@ import Controls from '../components/api-client/Controls';
 import Display from '../components/api-client/Display';
 import Header from '../components/Header';
 import History from '../components/history/History';
-import { getAPI } from '../services/fetchServices';
+import { callAPI } from '../services/apiServices';
+import styles from '../index.css';
 
 export default class Container extends Component {
 state = {
+  loading: false,
   url: '',
   method: '',
   body: '',
@@ -20,9 +22,15 @@ handleChange = (event) => {
 
 handleSubmit = async (event) => {
   event.preventDefault();
-  const display = await getAPI(this.state.url);
-  console.log(display);
-  this.setState({ display });
+  this.setState({ loading: true });
+
+  const display = await callAPI(
+    this.state.url, 
+    this.state.method, 
+    this.state.body
+  );
+
+  this.setState({ loading: false, display });
 
 }
 
@@ -33,15 +41,18 @@ handleSubmit = async (event) => {
 render() {
   console.log(this.state);
 
-  const { display } = this.state;
+  const { loading, display } = this.state;
   return (
     <>
       <Header />
-      <section className="main">
+      <section className={styles.main}>
         <History />
         <div>
           <Controls onChange={this.handleChange} onSubmit={this.handleSubmit}/>
-          <Display display={display}/>
+          { loading 
+            ? <div>Loading...</div>
+            :<Display display={display}/> 
+          }
         </div>
       </section>
     </>
