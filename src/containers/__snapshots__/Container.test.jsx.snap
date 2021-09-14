@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container test should return a call to an API 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="rooot"
+      >
+        <h1>
+          REST Clone
+        </h1>
+        <section
+          class="main"
+        >
+          <div
+            class="history"
+          >
+            <h2>
+              Call History
+            </h2>
+          </div>
+          <div>
+            <form
+              class="display"
+            >
+              <input
+                aria-label="url"
+                name="url"
+                placeholder="URL"
+                type="text"
+              />
+              <section>
+                <div>
+                  <label
+                    for="get"
+                  >
+                    <input
+                      id="get"
+                      name="method"
+                      type="radio"
+                      value="GET"
+                    />
+                    <p>
+                      GET
+                    </p>
+                  </label>
+                  <label
+                    for="post"
+                  >
+                    <input
+                      id="post"
+                      name="method"
+                      type="radio"
+                      value="POST"
+                    />
+                    <p>
+                      POST
+                    </p>
+                  </label>
+                  <label
+                    for="put"
+                  >
+                    <input
+                      id="put"
+                      name="method"
+                      type="radio"
+                      value="PUT"
+                    />
+                    <p>
+                      PUT
+                    </p>
+                  </label>
+                  <label
+                    for="patch"
+                  >
+                    <input
+                      id="patch"
+                      name="method"
+                      type="radio"
+                      value="PATCH"
+                    />
+                    <p>
+                      PATCH
+                    </p>
+                  </label>
+                  <label
+                    for="delete"
+                  >
+                    <input
+                      id="delete"
+                      name="method"
+                      type="radio"
+                      value="DELETE"
+                    />
+                    <p>
+                      DELETE
+                    </p>
+                  </label>
+                </div>
+                <button
+                  aria-label="submit"
+                >
+                  Submit
+                </button>
+              </section>
+              <textarea
+                aria-label="body"
+                name="body"
+                placeholder="raw JSON body"
+              />
+            </form>
+            <div
+              class="display"
+            >
+              Loading...
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="rooot"
+    >
+      <h1>
+        REST Clone
+      </h1>
+      <section
+        class="main"
+      >
+        <div
+          class="history"
+        >
+          <h2>
+            Call History
+          </h2>
+        </div>
+        <div>
+          <form
+            class="display"
+          >
+            <input
+              aria-label="url"
+              name="url"
+              placeholder="URL"
+              type="text"
+            />
+            <section>
+              <div>
+                <label
+                  for="get"
+                >
+                  <input
+                    id="get"
+                    name="method"
+                    type="radio"
+                    value="GET"
+                  />
+                  <p>
+                    GET
+                  </p>
+                </label>
+                <label
+                  for="post"
+                >
+                  <input
+                    id="post"
+                    name="method"
+                    type="radio"
+                    value="POST"
+                  />
+                  <p>
+                    POST
+                  </p>
+                </label>
+                <label
+                  for="put"
+                >
+                  <input
+                    id="put"
+                    name="method"
+                    type="radio"
+                    value="PUT"
+                  />
+                  <p>
+                    PUT
+                  </p>
+                </label>
+                <label
+                  for="patch"
+                >
+                  <input
+                    id="patch"
+                    name="method"
+                    type="radio"
+                    value="PATCH"
+                  />
+                  <p>
+                    PATCH
+                  </p>
+                </label>
+                <label
+                  for="delete"
+                >
+                  <input
+                    id="delete"
+                    name="method"
+                    type="radio"
+                    value="DELETE"
+                  />
+                  <p>
+                    DELETE
+                  </p>
+                </label>
+              </div>
+              <button
+                aria-label="submit"
+              >
+                Submit
+              </button>
+            </section>
+            <textarea
+              aria-label="body"
+              name="body"
+              placeholder="raw JSON body"
+            />
+          </form>
+          <div
+            class="display"
+          >
+            Loading...
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
