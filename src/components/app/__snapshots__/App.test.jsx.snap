@@ -109,7 +109,9 @@ exports[`App component renders App 1`] = `
           />
         </form>
         <div
+          aria-label="response"
           class="display"
+          role="article"
         >
           <div
             class="react-json-view"
