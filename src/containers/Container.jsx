@@ -35,8 +35,6 @@ handleSubmit = async (event) => {
 }
 
 render() {
-  console.log(this.state);
-
   const { loading, display } = this.state;
   return (
     <div className={styles.rooot}>

@@ -4,7 +4,10 @@ import ReactJson from 'react-json-view';
 import styles from '../../index.css';
 
 export default function Display({ display }) {
-  return <div className={styles.display}><ReactJson src={display} /></div>;
+  return (
+    <div className={styles.display} role="article" aria-label="response" >
+      <ReactJson src={display} />
+    </div>);
 }
 
 Display.propTypes = { 

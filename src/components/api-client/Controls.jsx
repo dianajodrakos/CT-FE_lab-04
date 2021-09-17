@@ -30,7 +30,7 @@ export default function Controls({ onChange, onSubmit }) {
             <p>DELETE</p>
           </label>
         </div>
-        <button>Submit</button>
+        <button aria-label="submit">Submit</button>
       </section>
       <textarea name="body" aria-label="body" placeholder="raw JSON body" ></textarea>
     </form>
