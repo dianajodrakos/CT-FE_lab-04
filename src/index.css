@@ -1,0 +1,74 @@
+#rooot {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  height: 100%;
+}
+
+.main {
+  display: -webkit-box;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border: 5px solid midnightblue;
+  margin: .5rem;
+  padding: .2rem;
+}
+
+.history , .controls, .display {
+  border: 3px solid royalblue;
+  margin: .5rem;
+  padding: .2rem;
+}
+
+.display {
+  font-size: .7rem;
+}
+
+h1 {
+  margin: .8rem;
+  padding: .3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  display: inline;
+  font-size: 1rem;
+}
+
+input[type=text], textarea {
+  width: 90%;
+}
+
+input[type=text], textarea, button {
+  margin: .5rem;
+}
+
+label {
+  margin: .5rem;
+  cursor: pointer;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + p {
+  padding: .2rem .5rem;
+}
+
+input[type=radio]:hover + p {
+  background-color: paleturquoise;
+  border-radius: .1rem;
+}
+
+input[type=radio]:active + p {
+  background-color:teal;
+  border-radius: .1rem;
+}
+
+input[type=radio]:checked + p {
+  background-color: peru;
+  border-radius: .1rem;
+}
