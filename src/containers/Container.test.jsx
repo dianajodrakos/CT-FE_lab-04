@@ -18,7 +18,12 @@ describe('Container test', () => {
   afterAll(() => server.close());
 
   it('should enter a URL and request method, click submit, and return a response from an API', async () => {
-    const component = render(<Container />);
+    const container = render(<Container />);
+
+    const controls = screen.getByRole('form', { name: 'REST controls' });
+    const display = screen.getByRole('article', { name: 'response' });
+
+    expect(controls).toMatchSnapshot();
 
     screen.getByText('REST Clone');
 
@@ -28,21 +33,16 @@ describe('Container test', () => {
     const radioButton = await screen.findByLabelText('GET');
     userEvent.click(radioButton);
 
-    const submitButton = await screen.findByRole(
-      'button',
-      { name: 'submit' }
-    );
+    const submitButton = await screen.findByRole('button', { name: 'submit' });
 
     userEvent.click(submitButton);
 
     return waitFor(() => {
-      const response = screen.getByText(
-        '"Admiral"',
-        { exact: false }
-      );
+      const response = screen.getByText('"Admiral"', { exact: false });
 
       expect(response).toBeInTheDocument();
-      expect(component).toMatchSnapshot();
+      expect(container).toMatchSnapshot();
+      expect(display).toMatchSnapshot();
     });
   });
 });
