@@ -5,7 +5,7 @@ import styles from '../../index.css';
 
 export default function Controls({ onChange, onSubmit }) {
   return (
-    <form className={styles.display} onChange={onChange} onSubmit={onSubmit}>
+    <form aria-label="REST controls" className={styles.display} onChange={onChange} onSubmit={onSubmit}>
       <input type="text" aria-label="url" name="url" placeholder="URL" />
       <section>
         <div>

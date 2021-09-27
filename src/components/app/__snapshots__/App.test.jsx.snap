@@ -20,6 +20,7 @@ exports[`App component renders App 1`] = `
       </div>
       <div>
         <form
+          aria-label="REST controls"
           class="display"
         >
           <input
